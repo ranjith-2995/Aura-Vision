@@ -1,0 +1,29 @@
+HOW TO ADD A PERSON FOR FACE RECOGNITION
+==========================================
+
+1. Create a subfolder inside known_faces/ with the person's name.
+   Example:
+       known_faces/
+           Ganesh/
+           Mom/
+           Dad/
+
+2. Put 5–10 clear face photos (JPG or PNG) of that person inside their folder.
+   - Good lighting, facing the camera
+   - Different angles/expressions = better accuracy
+   - Photos can be any size — they are auto-resized during training
+
+3. Run main.py normally. It trains fresh every startup from the images here.
+
+HOW RECOGNITION WORKS
+======================
+- Green box  = recognized person (name shown)
+- Red box    = unknown face (not in known_faces/)
+- Confidence threshold: 70 (lower LBPH score = better match)
+  Adjust the `confidence_threshold` in recognize_face() if needed.
+
+TIPS
+====
+- If a known person is often shown as "Unknown", add more/better photos.
+- Make sure each photo has a clearly visible face (the trainer skips
+  images where no face can be detected automatically).

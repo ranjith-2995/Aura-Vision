@@ -1,0 +1,13 @@
+opencv-python==4.*
+torch
+torchvision
+torchaudio
+pandas
+requests
+pyyaml
+tqdm
+matplotlib
+seaborn
+pyttsx3
+mediapipe
+numpy

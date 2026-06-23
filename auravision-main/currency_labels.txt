@@ -1,0 +1,11 @@
+fifty_new
+fifty_old
+five_hundred
+hundred_new
+hundred_old
+ten_new
+ten_old
+twenty_new
+twenty_old
+two_hundred
+two_thousand
